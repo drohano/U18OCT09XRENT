@@ -9,6 +9,10 @@ namespace U18OCT09X1.Models
     {
         public string Registration { get; set; }
 
+        public string Brand { get; set; }
+
         public string Model { get; set; }
+
+
     }
 }

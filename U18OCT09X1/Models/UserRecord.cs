@@ -11,8 +11,18 @@ namespace U18OCT09X1.Models
 
         public string LastName { get; set; }
 
+        public string Birthday { get; set; }
+
+        public string LicenseGet { get; set; }
+
+        public string LicenseExpire { get; set; }
+
+        public string LicenseWhere { get; set; }
+
+        public string LicenseID { get; set; }
+
         public string SocialSecurityNumber { get; set; }
 
-        public int MyProperty { get; set; }
+        public string LicenseType { get; set; }
     }
 }
