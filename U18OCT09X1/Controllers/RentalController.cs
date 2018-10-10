@@ -6,18 +6,10 @@ using System.Web.Mvc;
 
 namespace U18OCT09X1.Controllers
 {
-    public class HomeController : Controller
+    public class RentalController : Controller
     {
-        // GET: Home
-
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-
-
-        public ActionResult Contact()
+        // GET: Rental
+        public ActionResult Car()
         {
             return View();
         }
