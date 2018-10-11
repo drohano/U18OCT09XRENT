@@ -17,7 +17,7 @@ namespace U18OCT09X1.Controllers
         {
             cars = new List<Car>();
             cars.Add(new Models.Car() { Registration = "abc123", Brand = "Volvo", Model = "Big boi" });
-            cars.Add(new Models.Car() { Registration = "abc123", Brand = "Volvo", Model = "Big boi" });
+            cars.Add(new Models.Car() { Registration = "bbc420", Brand = "Volvo", Model = "small boi" });
             cars.Add(new Models.Car() { Registration = "abc123", Brand = "Volvo", Model = "Big boi" });
             cars.Add(new Models.Car() { Registration = "abc123", Brand = "Volvo", Model = "Big boi" });
 
