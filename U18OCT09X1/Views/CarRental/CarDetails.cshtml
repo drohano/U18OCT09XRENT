@@ -1,0 +1,13 @@
+﻿@model U18OCT09X1.Models.Car
+
+@{ 
+    ViewBag.Title = "CarDetails";
+}
+<div>
+    @Model.Brand
+    @Model.Model
+
+</div>
+<div>
+    <p>@Html.ActionLink("Go Back","CarsView")</p>
+</div>

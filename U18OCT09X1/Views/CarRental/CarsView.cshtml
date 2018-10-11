@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Cars";
+}
+
+
+<div>
+    <h2>Cars</h2>
+    <p>List of cars below</p>
+</div>
+<div>
+    @{ 
+        Html.RenderAction("Cars");
+
+    }
+
+</div>
+<div>
+    @{
+        Html.RenderAction("Customers");
+
+    }
+
+</div>

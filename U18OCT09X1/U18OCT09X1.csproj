@@ -94,7 +94,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\RentalController.cs" />
+    <Compile Include="Controllers\CarRentalController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -110,7 +110,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Rental\Car.cshtml" />
+    <Content Include="Views\CarRental\_Cars.cshtml" />
+    <Content Include="Views\CarRental\CarsView.cshtml" />
+    <Content Include="Views\CarRental\_Customers.cshtml" />
+    <Content Include="Views\CarRental\CarDetails.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

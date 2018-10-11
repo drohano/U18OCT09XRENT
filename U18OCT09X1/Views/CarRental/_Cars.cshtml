@@ -1,0 +1,12 @@
+﻿
+@model List<U18OCT09X1.Models.Car>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+            @item.Registration | @Html.ActionLink("info", "details", new { Registration = item.Registration})
+        </li>
+    }
+
+</ul>
