@@ -1,4 +1,5 @@
 ﻿
+@model U18OCT09X1.Models.UserRecord
 @{
     ViewBag.Title = "Cars";
 }
@@ -9,7 +10,7 @@
     <p>List of cars below</p>
 </div>
 <div>
-    @{ 
+    @{
         Html.RenderAction("Cars");
 
     }
@@ -35,9 +36,16 @@
                     </btn>
                 </div>
                 <div class="modal-body">
-                    <p>
-                        Insert forms here
-                    </p>
+                    <div>
+                        @using (Html.BeginForm())
+                        {
+                            <div class="form-group">
+                                @Html.LabelFor(anka => anka.FirstName)
+                                @Html.TextBoxFor(anka => anka.FirstName, new { @class = "form-control" })
+                            </div>
+                        }
+
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <btn type="button" class="btn btn-secondary" data-dismiss="modal">Close</btn>
@@ -54,4 +62,3 @@
 
 </div>
 
-</div>
