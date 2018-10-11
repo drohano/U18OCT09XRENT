@@ -31,9 +31,9 @@ namespace U18OCT09X1.Controllers
             return View(cars);
         }
 
-        public ViewResult Details(string Regestration)
+        public ViewResult Details(string Registration)
         {
-            return View("CarDetails", cars.First(x => x.Registration == Regestration));
+            return View("CarDetails", cars.First(x => x.Registration == Registration));
         }
      
         public PartialViewResult Cars()
@@ -45,6 +45,11 @@ namespace U18OCT09X1.Controllers
         {
 
             return PartialView("_Customers", customers);
+        }
+
+        public ViewResult RentCar()
+        {
+            return View();
         }
 
     }

@@ -1,6 +1,6 @@
 ﻿
 @{
-    
+
 }
 
 <!DOCTYPE html>
@@ -9,9 +9,33 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+
+    <script src="~/Scripts/jquery-3.0.0.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
     <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+
+            
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-ex-collapse" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle-navigation">
+                    <span class="sr-only">(current)</span>
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+                @Html.ActionLink("Johan's Car Rental", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            
+            <div class="navbar-ex-collapse collapse navbar-collapse">
+                <ul class="mr-auto navbar-nav">
+                    <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { area = "" }, new { @class = "nav-link"})</li>
+                    <li class="nav-item">@Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Cars", "CarsView", "CarRental", new { area = "" }, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+
+        </nav>
 
     </div>
     @RenderBody()
